@@ -10,8 +10,8 @@ define("ADMIN_EMAIL", "your-email@example.com"); // Update this to your receivin
 
 // Database credentials
 define("DB_HOST", "localhost");
-define("DB_USER", "root");         // Change this to your DB user
-define("DB_PASS", "");             // Change this to your DB password
+define("DB_USER", "root");        
+define("DB_PASS", "");             
 define("DB_NAME", "school_website");
 
 // Create database connection
