@@ -4,7 +4,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// Site-wide constants
+
 define("SITE_TITLE", "Greenfield School");
 define("ADMIN_EMAIL", "your-email@example.com"); 
 
