@@ -1,0 +1,27 @@
+<?php
+// Start session for admin/login pages
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+// Site-wide constants
+define("SITE_TITLE", "Greenfield School");
+define("ADMIN_EMAIL", "your-email@example.com"); // Update this to your receiving email
+
+// Database credentials
+define("DB_HOST", "localhost");
+define("DB_USER", "root");         // Change this to your DB user
+define("DB_PASS", "");             // Change this to your DB password
+define("DB_NAME", "school_website");
+
+// Create database connection
+$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Database Connection Failed: " . $conn->connect_error);
+}
+
+// Set character set to utf8mb4 for emoji and multilingual support
+$conn->set_charset("utf8mb4");
+?>
