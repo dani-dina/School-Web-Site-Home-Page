@@ -1,12 +1,12 @@
 <?php
-// Start session for admin/login pages
+
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
 // Site-wide constants
 define("SITE_TITLE", "Greenfield School");
-define("ADMIN_EMAIL", "your-email@example.com"); // Update this to your receiving email
+define("ADMIN_EMAIL", "your-email@example.com"); 
 
 // Database credentials
 define("DB_HOST", "localhost");
