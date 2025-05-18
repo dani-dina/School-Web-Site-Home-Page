@@ -17,11 +17,9 @@ define("DB_NAME", "school_website");
 // Create database connection
 $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
-// Check connection
 if ($conn->connect_error) {
     die("Database Connection Failed: " . $conn->connect_error);
 }
 
-// Set character set to utf8mb4 for emoji and multilingual support
 $conn->set_charset("utf8mb4");
 ?>
